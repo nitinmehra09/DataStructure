@@ -6,44 +6,40 @@ This repo is all about raw, unfiltered Data Structures in C—no algorithms, jus
 
 📦 What's Inside?
 
-Arrays 📊
+  Arrays 📊
 
-Linked Lists 🔗
+  Linked Lists 🔗
 
-Stacks 📚
+  Stacks 📚
 
-Queues 🎟️
+  Queues 🎟️
 
-Trees 🌳
+  Trees 🌳
 
-Graphs 🕸️
-
-Hash Tables 🔑
-
-And more...
+  Graphs 🕸️
 
 💡 Why This Repo?
 
-Focuses purely on data structures, no sorting/searching distractions.
+  Focuses purely on data structures, no sorting/searching distractions.
 
-Simple, modular, and well-documented C implementations.
+  Simple, modular, and well-documented C implementations.
 
-Great for learning, reference, and reuse in your projects.
+  Great for learning, reference, and reuse in your projects.
 
 🚀 Get Started
 
-Clone this repo and start exploring:
+  Clone this repo and start exploring:
 
-git clone https://github.com/yourusername/yourrepo.git
-cd yourrepo
+  git clone https://github.com/yourusername/yourrepo.git
+        cd yourrepo
 
 🤝 Contributing
 
-Found a bug? Have a better implementation? PRs are welcome! 🎉
+  Found a bug? Have a better implementation? PRs are welcome! 🎉
 
 📜 License
 
-MIT License. Use it, learn from it, and share the knowledge!
+  MIT License. Use it, learn from it, and share the knowledge!
 
 📢 Follow for updates! Happy coding! 🎯
 
