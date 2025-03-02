@@ -1,5 +1,4 @@
-// InsertionAtFirst()
-
+// InsertionAtLast()
 #include<stdio.h>
 #include<stdlib.h>
 struct Node
@@ -9,7 +8,7 @@ struct Node
 };
 struct Node *start = NULL;
 struct Node *last = NULL;  
-void InsertionAtFirst(int x)
+void InsertionAtLast(int x)
 {
     struct Node *p = (struct Node*)malloc(sizeof(struct Node));
     if(p == NULL){
@@ -26,7 +25,8 @@ void InsertionAtFirst(int x)
             p->info = x;
             p->next = start;
             last->next = p;
-            start=p;
+            last = p;
+
         }
     }
 }
@@ -47,12 +47,12 @@ void displayList() {
 
 int main()
 {
-    InsertionAtFirst(10);
-    InsertionAtFirst(20);
-    InsertionAtFirst(30);
-    InsertionAtFirst(40);
-    InsertionAtFirst(50);
-    InsertionAtFirst(60);
+    InsertionAtLast(10);
+    InsertionAtLast(20);
+    InsertionAtLast(30);
+    InsertionAtLast(40);
+    InsertionAtLast(50);
+    InsertionAtLast(60);
 
     displayList();  
 
