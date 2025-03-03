@@ -4,22 +4,15 @@ int size=5;
 int queue[5];
 int front =-1;
 int rear =-1;
-void enqueue(int item)
-{
-	if(rear==size-1)
-	{
+void enqueue(int item){
+	if(rear==size-1){
 		printf("Queue Full\n");
-	}
-	else
-	{
-		if(front == -1 && rear == -1)
-		{
+	}else{
+		if(front == -1 && rear == -1){
 			rear=rear+1;
 			front=front+1;
 			queue[rear]=item;
-		}
-		else
-		{
+		}else{
 		    rear=rear+1;
             queue[rear]=item;	
 		}
@@ -48,8 +41,7 @@ void show() {
     }
     printf("\n");
 }
-int main()
-{
+int main(){
 	enqueue(10);
 	enqueue(20);
 	enqueue(30);
