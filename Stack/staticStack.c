@@ -1,13 +1,21 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 int top = -1;
-void algo_push(int a[],int maxsize,int item){
+void push(int a[],int maxsize,int item){
     if (top == maxsize - 1){
-        printf("stack is empty\n");
+        printf("stack is full\n");
     }
-    top +=1;
-    a[top] = item;
-    //printf("Item %d pushed to stack\n", item);
+    else{
+        top +=1;
+        a[top] = item;
+    }
+}
+void pop(){
+    if(top == -1){
+        printf("Stack is empty \n");
+    }
+    else{
+        top -=1;
+    }
 }
 void display(int a[]) {
     if (top == -1) {
@@ -21,15 +29,22 @@ void display(int a[]) {
     }
 }
 int main() {
-    int n;
-    printf("Enter size of array : ");
+    int n,m;
+    printf("Enter size of stack : ");
     scanf("%d",&n);
     int a[n],item;
-    for (int i =0;i<n;i++){
+    for (int i=0;i<n;i++){
         printf("Enter item to push: ");
         scanf("%d",&item);
-        algo_push(a,n,item);
+        push(a,n,item);
     }
+    display(a);
+    printf("Enter no. of element want to remove : ");
+    scanf("%d",&m);
+    for (int i=0;i<m;i++){
+        pop();
+    }
+    printf("After Pop operation \n");
     display(a);
     return 0;
 }
