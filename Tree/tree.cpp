@@ -47,6 +47,7 @@ int main() {
     tree = BST(tree, 43);
     tree = BST(tree, 44);
     tree = BST(tree, 100);
+    tree = BST(tree, 19)
     cout << "Inorder Traversal: ";
     print(tree);
     cout << endl;
